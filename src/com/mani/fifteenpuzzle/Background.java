@@ -79,7 +79,7 @@ public class Background {
 			mPaint.setTextSize(15);	
 			xoffsetportrait = 5;
 		}
-		else if(width == 800 || width == 400)
+		else 
 		{
 			mPaint.setTextSize(25);
 			xoffsetportrait = 10;
@@ -137,7 +137,7 @@ public class Background {
 					timeTextX = (width *5)/100;
 					movesTextX = (width *60)/100;
 				}
-				else if(width == 400 || width ==800)
+				else 
 				{
 					timeTextY = (height *72)/100;
 					movesTextY= (height *85)/100;
@@ -154,7 +154,7 @@ public class Background {
 					timeTextX = (width *5)/100;
 					movesTextX = (width *60)/100;
 				}
-				else if(width == 400 || width ==800)
+				else 
 				{
 					timeTextY = (height *85)/100;
 					movesTextY= (height *85)/100;
@@ -225,8 +225,9 @@ public class Background {
 				if(width == 240 || width == 320)
 					yOffset = ((height * 10 )/100);	
 				else
-					yOffset = ((height * 2 )/100);
-				cellSizeHeight = (height -((3*lineGap)+yOffset +25))/ 4;
+					yOffset = ((height *2 )/100);
+								
+				cellSizeHeight = (height -((3*lineGap)+yOffset +25+15))/ 4;
 				xOffset= xoffsetLandscape;
 			}
 			
@@ -282,7 +283,7 @@ public class Background {
 				if(width == 240 || width == 320)
 					yOffset = ((height * 10 )/100);	
 				else
-					yOffset = ((height * 2 )/100);
+					yOffset = ((height *2 )/100);
 		
 			xOffset=xoffsetLandscape;
 			}
